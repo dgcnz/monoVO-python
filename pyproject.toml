@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "monovo-python"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+opencv-python = "^4.9.0.80"
+tqdm = "^4.66.2"
+pillow = "^10.3.0"
+roma = {git = "https://github.com/dgcnz/RoMa"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
