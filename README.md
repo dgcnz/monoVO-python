@@ -7,10 +7,10 @@ Lucas Kanade
 ![lk](lk.png)
 
 SIFT
-![sift][sift.png]
+![sift](sift.png)
 
 ROMA
-![roma][roma.png]
+![roma](roma.png)
 
 
 ### Dependencies
