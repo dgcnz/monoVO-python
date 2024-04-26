@@ -120,7 +120,7 @@ class VisualOdometry:
             E, self.px_cur, self.px_ref, focal=self.focal, pp=self.pp
         )
         absolute_scale = self.getAbsoluteScale(frame_id)
-        if absolute_scale > 0.1:
+        if absolute_scale > 0.1: # set to -inf if you always want to commit
             self.cur_t = self.cur_t + absolute_scale * self.cur_R.dot(t)
             self.cur_R = R.dot(self.cur_R)
         if self.px_ref.shape[0] < kMinNumFeature:
